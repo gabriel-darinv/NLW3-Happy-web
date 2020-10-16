@@ -1,8 +1,8 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 import logoImg from '../assets/logo.svg';
 import { FiArrowRight } from 'react-icons/fi'
-
 
 import '../styles/pages/landing.css';
 
@@ -22,9 +22,9 @@ const Landing: React.FC = () => {
           <span>São Paulo</span>
         </div>
 
-        <a href="/app" className="enter-app">
+        <Link to="/app" className="enter-app">
           <FiArrowRight size={26} color="rgba(0, 0, 0, 0.6)" />
-        </a>
+        </Link>
       </div>
     </div>
   );
